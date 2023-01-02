@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "moretarantulas",
+  "version": "${version}",
+
+  "name": "MoreTarantulas Mod",
+  "description": "Add Tarantula to minecraft!",
+  "authors": [
+    "NamoZDizeX!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/moretarantulas/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.namozdizex.moretarantulas.MoreTarantulasMod"
+    ],
+    "client": [
+      "net.namozdizex.moretarantulas.MoreTarantulasClient"
+    ]
+  },
+  "mixins": [
+    "moretarantulas.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
