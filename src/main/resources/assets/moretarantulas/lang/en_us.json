@@ -1,7 +1,11 @@
 {
   "item.moretarantulas.electric_blue_spawn_egg": "Electirc Blue Spawn Egg",
   "item.moretarantulas.big_black_spawn_egg": "BigBlack Spawn Egg",
+  "item.moretarantulas.taksinus_bambus_spawn_egg": "Taksinus Bambus Spawn Egg",
+
 
   "entity.moretarantulas.electric_blue": "Tarantula [ Electric Blue ]",
-  "entity.moretarantulas.big_black": "Tarantula [ Big Black ]"
+  "entity.moretarantulas.big_black": "Tarantula [ Big Black ]",
+  "entity.moretarantulas.taksinus_bambus": "Tarantula [ Taksinus Bambus ]"
+
 }

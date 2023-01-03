@@ -10,16 +10,19 @@ import net.minecraft.world.entity.MobCategory;
 import net.namozdizex.moretarantulas.MoreTarantulasMod;
 import net.namozdizex.moretarantulas.entity.BigBlackTarantula;
 import net.namozdizex.moretarantulas.entity.ElectricBlueTarantula;
+import net.namozdizex.moretarantulas.entity.TaksinusBambusTarantula;
 
 public class MTEntity {
 
     public static final EntityType<ElectricBlueTarantula> ELECTRIC_BLUE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, ElectricBlueTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<BigBlackTarantula> BIG_BLACK_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, BigBlackTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<TaksinusBambusTarantula> TAKSINUS_BAMBUS_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, TaksinusBambusTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
 
     public static void init() {
 
         register("electric_blue", ELECTRIC_BLUE_TARANTULA);
         register("big_black", BIG_BLACK_TARANTULA);
+        register("taksinus_bambus", TAKSINUS_BAMBUS_TARANTULA);
 
     }
 
