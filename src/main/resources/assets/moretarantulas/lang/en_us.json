@@ -2,10 +2,16 @@
   "item.moretarantulas.electric_blue_spawn_egg": "Electirc Blue Spawn Egg",
   "item.moretarantulas.big_black_spawn_egg": "BigBlack Spawn Egg",
   "item.moretarantulas.taksinus_bambus_spawn_egg": "Taksinus Bambus Spawn Egg",
+  "item.moretarantulas.metallica_spawn_egg": "Metallica Spawn Egg",
+
 
 
   "entity.moretarantulas.electric_blue": "Tarantula [ Electric Blue ]",
   "entity.moretarantulas.big_black": "Tarantula [ Big Black ]",
-  "entity.moretarantulas.taksinus_bambus": "Tarantula [ Taksinus Bambus ]"
+  "entity.moretarantulas.taksinus_bambus": "Tarantula [ Taksinus Bambus ]",
+  "entity.moretarantulas.metallica": "Tarantula [ Metallica ]",
+
+  "itemGroup.moretarantulas.main": "MoreTarantulas"
+
 
 }

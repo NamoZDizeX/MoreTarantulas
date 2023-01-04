@@ -8,6 +8,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.namozdizex.moretarantulas.entity.BigBlackTarantula;
 import net.namozdizex.moretarantulas.entity.ElectricBlueTarantula;
+import net.namozdizex.moretarantulas.entity.MetallicaTarantula;
 import net.namozdizex.moretarantulas.entity.TaksinusBambusTarantula;
 import net.namozdizex.moretarantulas.registry.MTEntity;
 import net.namozdizex.moretarantulas.registry.MTItems;
@@ -29,5 +30,6 @@ public class MoreTarantulasMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(MTEntity.ELECTRIC_BLUE_TARANTULA, ElectricBlueTarantula.createMobAttributes());
 		FabricDefaultAttributeRegistry.register(MTEntity.BIG_BLACK_TARANTULA, BigBlackTarantula.createMobAttributes());
 		FabricDefaultAttributeRegistry.register(MTEntity.TAKSINUS_BAMBUS_TARANTULA, TaksinusBambusTarantula.createMobAttributes());
+		FabricDefaultAttributeRegistry.register(MTEntity.METALLICA_TARANTULA, MetallicaTarantula.createMobAttributes());
 	}
 }
