@@ -8,10 +8,7 @@ import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.namozdizex.moretarantulas.MoreTarantulasMod;
-import net.namozdizex.moretarantulas.entity.BigBlackTarantula;
-import net.namozdizex.moretarantulas.entity.ElectricBlueTarantula;
-import net.namozdizex.moretarantulas.entity.MetallicaTarantula;
-import net.namozdizex.moretarantulas.entity.TaksinusBambusTarantula;
+import net.namozdizex.moretarantulas.entity.*;
 
 public class MTEntity {
 
@@ -19,6 +16,7 @@ public class MTEntity {
     public static final EntityType<BigBlackTarantula> BIG_BLACK_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, BigBlackTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<TaksinusBambusTarantula> TAKSINUS_BAMBUS_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, TaksinusBambusTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<MetallicaTarantula> METALLICA_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, MetallicaTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<PterinochilusMurinusTarantula> PTERINOCHILUS_MURINUS_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, PterinochilusMurinusTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
 
     public static void init() {
 
@@ -26,6 +24,7 @@ public class MTEntity {
         register("big_black", BIG_BLACK_TARANTULA);
         register("taksinus_bambus", TAKSINUS_BAMBUS_TARANTULA);
         register("metallica", METALLICA_TARANTULA);
+        register("pterinochilus_murinus", PTERINOCHILUS_MURINUS_TARANTULA);
 
     }
 

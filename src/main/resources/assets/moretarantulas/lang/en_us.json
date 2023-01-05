@@ -3,6 +3,8 @@
   "item.moretarantulas.big_black_spawn_egg": "BigBlack Spawn Egg",
   "item.moretarantulas.taksinus_bambus_spawn_egg": "Taksinus Bambus Spawn Egg",
   "item.moretarantulas.metallica_spawn_egg": "Metallica Spawn Egg",
+  "item.moretarantulas.pterinochilus_murinus_spawn_egg": "Pterinochilus Murinus Spawn Egg",
+
 
 
 
@@ -10,6 +12,8 @@
   "entity.moretarantulas.big_black": "Tarantula [ Big Black ]",
   "entity.moretarantulas.taksinus_bambus": "Tarantula [ Taksinus Bambus ]",
   "entity.moretarantulas.metallica": "Tarantula [ Metallica ]",
+  "entity.moretarantulas.pterinochilus_murinus": "Tarantula [ Pterinochilus Murinus ]",
+
 
   "itemGroup.moretarantulas.main": "MoreTarantulas"
 

@@ -12,6 +12,7 @@ public class MTItems {
     public static final Item BIG_BLACK_SPAWN_EGG = new SpawnEggItem(MTEntity.BIG_BLACK_TARANTULA, 0x030303 ,0x030303, new Item.Properties().tab(MoreTarantulasMod.TAB));
     public static final Item TAKSINUS_BAMBUS_SPAWN_EGG = new SpawnEggItem(MTEntity.TAKSINUS_BAMBUS_TARANTULA, 0x1f1f20 ,0xf3e386, new Item.Properties().tab(MoreTarantulasMod.TAB));
     public static final Item METALLICA_SPAWN_EGG = new SpawnEggItem(MTEntity.METALLICA_TARANTULA, 0x0203a1 ,0xfcc705, new Item.Properties().tab(MoreTarantulasMod.TAB));
+    public static final Item PTERINOCHILUS_MURINUS_SPAWN_EGG = new SpawnEggItem(MTEntity.PTERINOCHILUS_MURINUS_TARANTULA, 0xd77405,0x020202, new Item.Properties().tab(MoreTarantulasMod.TAB));
 
     public static void init() {
 
@@ -19,6 +20,7 @@ public class MTItems {
         register("big_black_spawn_egg", BIG_BLACK_SPAWN_EGG);
         register("taksinus_bambus_spawn_egg", TAKSINUS_BAMBUS_SPAWN_EGG);
         register("metallica_spawn_egg", METALLICA_SPAWN_EGG);
+        register("pterinochilus_murinus_spawn_egg",PTERINOCHILUS_MURINUS_SPAWN_EGG);
     }
 
     public static void register(String key, Item item) {
