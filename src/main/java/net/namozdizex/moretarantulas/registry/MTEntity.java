@@ -18,6 +18,7 @@ public class MTEntity {
     public static final EntityType<MetallicaTarantula> METALLICA_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, MetallicaTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<PterinochilusMurinusTarantula> PTERINOCHILUS_MURINUS_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, PterinochilusMurinusTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<GoldenKneeTarantula> GOLDEN_KNEE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, GoldenKneeTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<RedKneeTarantula> RED_KNEE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, RedKneeTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
 
     public static void init() {
 
@@ -27,6 +28,7 @@ public class MTEntity {
         register("metallica", METALLICA_TARANTULA);
         register("pterinochilus_murinus", PTERINOCHILUS_MURINUS_TARANTULA);
         register("golden_knee", GOLDEN_KNEE_TARANTULA);
+        register("red_knee", RED_KNEE_TARANTULA);
 
     }
 
