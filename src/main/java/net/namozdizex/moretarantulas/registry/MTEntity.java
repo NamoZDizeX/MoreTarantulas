@@ -19,6 +19,8 @@ public class MTEntity {
     public static final EntityType<PterinochilusMurinusTarantula> PTERINOCHILUS_MURINUS_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, PterinochilusMurinusTarantula::new).dimensions(EntityDimensions.fixed(0.85F, 0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<GoldenKneeTarantula> GOLDEN_KNEE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, GoldenKneeTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<RedKneeTarantula> RED_KNEE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, RedKneeTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<ParahybanaTarantula> PARAHYBANA_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, ParahybanaTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<CurlyHairTarantula> CURLY_HAIR_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, CurlyHairTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
 
     public static void init() {
 
@@ -29,6 +31,8 @@ public class MTEntity {
         register("pterinochilus_murinus", PTERINOCHILUS_MURINUS_TARANTULA);
         register("golden_knee", GOLDEN_KNEE_TARANTULA);
         register("red_knee", RED_KNEE_TARANTULA);
+        register("parahybana", PARAHYBANA_TARANTULA);
+        register("curly_hair", CURLY_HAIR_TARANTULA);
 
     }
 

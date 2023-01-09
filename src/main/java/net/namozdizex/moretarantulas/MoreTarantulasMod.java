@@ -31,5 +31,7 @@ public class MoreTarantulasMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(MTEntity.PTERINOCHILUS_MURINUS_TARANTULA, PterinochilusMurinusTarantula.createMobAttributes());
 		FabricDefaultAttributeRegistry.register(MTEntity.GOLDEN_KNEE_TARANTULA, GoldenKneeTarantula.createMobAttributes());
 		FabricDefaultAttributeRegistry.register(MTEntity.RED_KNEE_TARANTULA, RedKneeTarantula.createMobAttributes());
+		FabricDefaultAttributeRegistry.register(MTEntity.CURLY_HAIR_TARANTULA, CurlyHairTarantula.createMobAttributes());
+		FabricDefaultAttributeRegistry.register(MTEntity.PARAHYBANA_TARANTULA, ParahybanaTarantula.createMobAttributes());
 	}
 }

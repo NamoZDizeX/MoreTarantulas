@@ -16,6 +16,8 @@ public class MoreTarantulasClient implements ClientModInitializer {
         EntityRendererRegistry.register(MTEntity.PTERINOCHILUS_MURINUS_TARANTULA, PterinochilusMurinusTarantulaRenderer::new);
         EntityRendererRegistry.register(MTEntity.GOLDEN_KNEE_TARANTULA, GoldenKneeTarantulaRenderer::new);
         EntityRendererRegistry.register(MTEntity.RED_KNEE_TARANTULA, RedKneeTarantulaRenderer::new);
+        EntityRendererRegistry.register(MTEntity.PARAHYBANA_TARANTULA, ParahybanaTarantulaRenderer::new);
+        EntityRendererRegistry.register(MTEntity.CURLY_HAIR_TARANTULA, CurlyHairTarantulaRenderer::new);
 
     }
 }

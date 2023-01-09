@@ -15,6 +15,8 @@ public class MTItems {
     public static final Item PTERINOCHILUS_MURINUS_SPAWN_EGG = new SpawnEggItem(MTEntity.PTERINOCHILUS_MURINUS_TARANTULA, 0xd77405,0x020202, new Item.Properties().tab(MoreTarantulasMod.TAB));
     public static final Item GOLDEN_KNEE_SPAWN_EGG = new SpawnEggItem(MTEntity.GOLDEN_KNEE_TARANTULA, 0x030303,0xfcbf05, new Item.Properties().tab(MoreTarantulasMod.TAB));
     public static final Item RED_KNEE_SPAWN_EGG = new SpawnEggItem(MTEntity.RED_KNEE_TARANTULA, 0x030303,0xfc6f05, new Item.Properties().tab(MoreTarantulasMod.TAB));
+    public static final Item PARAHYBANA_SPAWN_EGG = new SpawnEggItem(MTEntity.PARAHYBANA_TARANTULA, 0x030303,0xbea761, new Item.Properties().tab(MoreTarantulasMod.TAB));
+    public static final Item CURLY_HAIR_SPAWN_EGG = new SpawnEggItem(MTEntity.CURLY_HAIR_TARANTULA, 0x030303,0xbea761, new Item.Properties().tab(MoreTarantulasMod.TAB));
 
     public static void init() {
 
@@ -25,6 +27,8 @@ public class MTItems {
         register("pterinochilus_murinus_spawn_egg",PTERINOCHILUS_MURINUS_SPAWN_EGG);
         register("golden_knee_spawn_egg", GOLDEN_KNEE_SPAWN_EGG);
         register("red_knee_spawn_egg", RED_KNEE_SPAWN_EGG);
+        register("parahybana_spawn_egg", PARAHYBANA_SPAWN_EGG);
+        register("curly_hair_spawn_egg", CURLY_HAIR_SPAWN_EGG);
     }
 
     public static void register(String key, Item item) {
