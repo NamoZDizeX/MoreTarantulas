@@ -4,12 +4,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectUtil;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -24,23 +22,22 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import org.jetbrains.annotations.Nullable;
 
-public class ParahybanaTarantula extends Monster {
+public class RedAndWhiteTarantula extends Monster {
     private static EntityDataAccessor<Byte> DATA_FLAGS_ID = null;
-    public ParahybanaTarantula(EntityType<? extends ParahybanaTarantula> entityType, Level level) {
+    public RedAndWhiteTarantula(EntityType<? extends RedAndWhiteTarantula> entityType, Level level) {
         super(entityType, level);
     }
 
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
         this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.4F));
-        this.goalSelector.addGoal(4, new ParahybanaTarantula.TarantulaAttackGoal(this, Player.class));
+        this.goalSelector.addGoal(4, new RedAndWhiteTarantula.TarantulaAttackGoal(this, Player.class));
         this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 0.8));
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0F));
         this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(1, new HurtByTargetGoal(this, new Class[0]));
-        this.targetSelector.addGoal(2, new ParahybanaTarantula.TarantulaAttackGoal(this, Player.class));
+        this.targetSelector.addGoal(2, new RedAndWhiteTarantula.TarantulaAttackGoal(this, Player.class));
     }
 
     public double getPassengersRidingOffset() {
@@ -62,11 +59,6 @@ public class ParahybanaTarantula extends Monster {
             this.setClimbing(this.horizontalCollision);
         }
 
-    }
-
-    public static void applyPoisonAround(ServerLevel serverLevel, Vec3 vec3, @Nullable Entity entity, int i) {
-        MobEffectInstance mobEffectInstance = new MobEffectInstance(MobEffects.POISON, 260, 0, false, false);
-        MobEffectUtil.addEffectToPlayersAround(serverLevel, entity, vec3, (double)i, mobEffectInstance, 200);
     }
 
     public static AttributeSupplier.Builder createMobAttributes() {
@@ -132,7 +124,7 @@ public class ParahybanaTarantula extends Monster {
     }
 
     static class TarantulaAttackGoal extends MeleeAttackGoal {
-        public TarantulaAttackGoal(ParahybanaTarantula spider, Class<Player> playerClass) {
+        public TarantulaAttackGoal(RedAndWhiteTarantula spider, Class<Player> playerClass) {
             super(spider, 1.0, true);
         }
 

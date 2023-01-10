@@ -21,6 +21,7 @@ public class MTEntity {
     public static final EntityType<RedKneeTarantula> RED_KNEE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, RedKneeTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<ParahybanaTarantula> PARAHYBANA_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, ParahybanaTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
     public static final EntityType<CurlyHairTarantula> CURLY_HAIR_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, CurlyHairTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
+    public static final EntityType<RedAndWhiteTarantula> RED_AND_WHITE_TARANTULA = FabricEntityTypeBuilder.create(MobCategory.MONSTER, RedAndWhiteTarantula::new).dimensions(EntityDimensions.fixed(0.85F,0.85F)).trackRangeBlocks(4).build();
 
     public static void init() {
 
@@ -33,6 +34,7 @@ public class MTEntity {
         register("red_knee", RED_KNEE_TARANTULA);
         register("parahybana", PARAHYBANA_TARANTULA);
         register("curly_hair", CURLY_HAIR_TARANTULA);
+        register("red_and_white", RED_AND_WHITE_TARANTULA);
 
     }
 

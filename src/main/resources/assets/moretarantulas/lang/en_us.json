@@ -8,6 +8,8 @@
   "item.moretarantulas.red_knee_spawn_egg": "Red Knee Spawn Egg",
   "item.moretarantulas.parahybana_spawn_egg": "Parahybana Spawn Egg",
   "item.moretarantulas.curly_hair_spawn_egg": "Curly Hair Spawn Egg",
+  "item.moretarantulas.red_and_white_spawn_egg": "Red And White Spawn Egg",
+
 
   "entity.moretarantulas.electric_blue": "Tarantula [ Electric Blue ]",
   "entity.moretarantulas.big_black": "Tarantula [ Big Black ]",
@@ -18,6 +20,8 @@
   "entity.moretarantulas.red_knee": "Tarantula [ Red Knee ]",
   "entity.moretarantulas.parahybana": "Tarantula [ Parahybana ]",
   "entity.moretarantulas.curly_hair": "Tarantula [ CurlyHair ]",
+  "entity.moretarantulas.red_and_white": "Tarantula [ Red And White ]",
+
 
   "itemGroup.moretarantulas.main": "MoreTarantulas"
 }
