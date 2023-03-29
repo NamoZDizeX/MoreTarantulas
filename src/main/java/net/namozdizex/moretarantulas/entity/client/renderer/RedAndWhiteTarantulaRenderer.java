@@ -6,9 +6,9 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.namozdizex.moretarantulas.entity.RedAndWhiteTarantula;
-import net.namozdizex.moretarantulas.entity.client.model.TarantulaModel;
+import net.namozdizex.moretarantulas.entity.client.model.TarantulaNewModel;
 
-public class RedAndWhiteTarantulaRenderer <T extends RedAndWhiteTarantula> extends MobRenderer<T, TarantulaModel<T>> {
+public class RedAndWhiteTarantulaRenderer <T extends RedAndWhiteTarantula> extends MobRenderer<T, TarantulaNewModel<T>> {
     private static final ResourceLocation RED_AND_WHITE = new ResourceLocation("moretarantulas:textures/entity/red_and_white.png");
 
     public RedAndWhiteTarantulaRenderer(EntityRendererProvider.Context context) {
@@ -16,7 +16,7 @@ public class RedAndWhiteTarantulaRenderer <T extends RedAndWhiteTarantula> exten
     }
 
     public RedAndWhiteTarantulaRenderer(EntityRendererProvider.Context context, ModelLayerLocation modelLayerLocation) {
-        super(context, new TarantulaModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
+        super(context, new TarantulaNewModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
     }
 
     protected float getFlipDegrees(T spider) {
