@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.namozdizex.moretarantulas.entity.*;
+import net.namozdizex.moretarantulas.registry.MTBlocks;
 import net.namozdizex.moretarantulas.registry.MTEntity;
 import net.namozdizex.moretarantulas.registry.MTItems;
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ public class MoreTarantulasMod implements ModInitializer {
 
 		MTEntity.init();
 		MTItems.init();
+		MTBlocks.init();
 
 		FabricDefaultAttributeRegistry.register(MTEntity.ELECTRIC_BLUE_TARANTULA, ElectricBlueTarantula.createMobAttributes());
 		FabricDefaultAttributeRegistry.register(MTEntity.BIG_BLACK_TARANTULA, BigBlackTarantula.createMobAttributes());

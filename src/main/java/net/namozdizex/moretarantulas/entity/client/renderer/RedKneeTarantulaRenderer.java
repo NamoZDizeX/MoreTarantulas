@@ -6,9 +6,9 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.namozdizex.moretarantulas.entity.RedKneeTarantula;
-import net.namozdizex.moretarantulas.entity.client.model.TarantulaModel;
+import net.namozdizex.moretarantulas.entity.client.model.TarantulaNewModel;
 
-public class RedKneeTarantulaRenderer <T extends RedKneeTarantula> extends MobRenderer<T, TarantulaModel<T>> {
+public class RedKneeTarantulaRenderer <T extends RedKneeTarantula> extends MobRenderer<T, TarantulaNewModel<T>> {
     private static final ResourceLocation RED_KNEE_LOCATION = new ResourceLocation("moretarantulas:textures/entity/red_knee.png");
 
     public RedKneeTarantulaRenderer(EntityRendererProvider.Context context) {
@@ -16,7 +16,7 @@ public class RedKneeTarantulaRenderer <T extends RedKneeTarantula> extends MobRe
     }
 
     public RedKneeTarantulaRenderer(EntityRendererProvider.Context context, ModelLayerLocation modelLayerLocation) {
-        super(context, new TarantulaModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
+        super(context, new TarantulaNewModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
     }
 
     protected float getFlipDegrees(T spider) {

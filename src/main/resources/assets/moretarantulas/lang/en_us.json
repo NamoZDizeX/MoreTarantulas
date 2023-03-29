@@ -22,6 +22,9 @@
   "entity.moretarantulas.curly_hair": "Tarantula [ CurlyHair ]",
   "entity.moretarantulas.red_and_white": "Tarantula [ Red And White ]",
 
+  "block.moretarantulas.tarantula_egg": "Tarantula Egg",
+  "block.moretarantulas.tarantula_egg_ripping_1": "Tarantula Egg",
+  "block.moretarantulas.tarantula_egg_ripping_2": "Tarantula Egg",
 
   "itemGroup.moretarantulas.main": "MoreTarantulas"
 }

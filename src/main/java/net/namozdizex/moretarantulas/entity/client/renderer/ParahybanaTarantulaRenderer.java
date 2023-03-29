@@ -6,9 +6,9 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.namozdizex.moretarantulas.entity.ParahybanaTarantula;
-import net.namozdizex.moretarantulas.entity.client.model.TarantulaModel;
+import net.namozdizex.moretarantulas.entity.client.model.TarantulaNewModel;
 
-public class ParahybanaTarantulaRenderer <T extends ParahybanaTarantula> extends MobRenderer<T, TarantulaModel<T>> {
+public class ParahybanaTarantulaRenderer <T extends ParahybanaTarantula> extends MobRenderer<T, TarantulaNewModel<T>> {
     private static final ResourceLocation PARAHYBANA_LOCATION = new ResourceLocation("moretarantulas:textures/entity/parahybana.png");
 
     public ParahybanaTarantulaRenderer(EntityRendererProvider.Context context) {
@@ -16,7 +16,7 @@ public class ParahybanaTarantulaRenderer <T extends ParahybanaTarantula> extends
     }
 
     public ParahybanaTarantulaRenderer(EntityRendererProvider.Context context, ModelLayerLocation modelLayerLocation) {
-        super(context, new TarantulaModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
+        super(context, new TarantulaNewModel<>(context.bakeLayer(modelLayerLocation)), 0.8F);
     }
 
     protected float getFlipDegrees(T spider) {
